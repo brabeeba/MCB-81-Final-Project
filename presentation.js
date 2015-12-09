@@ -1,54 +1,3 @@
-function Graph () {
-	
-	this.chart = new CanvasJS.Chart("graph",
-    {
-      theme: "theme2",
-      title:{
-        text: "test"
-      },
-      width: window.innerWidth-20,
-      height: window.innerHeight*3/4,
-      animationEnabled: false,
-      axisX: {
-		title: "Days after training",
-		minimum: 0,
-		maximum: 7
-	},
-      axisY:{
-		title: "Duration of withdrawal (% of control)",
-		minimum: 0,
-		maximum: 1000
-	},
-      data: [{
-		type: "line",
-		showInLegend: true,
-		legendText: "Control",
-		dataPoints: [
-		{x: 0, y: 100}
-	
-		]
-	}, {
-		type: "line",
-		showInLegend: true,
-		legendText: "4 Single Shocks",
-		dataPoints: [
-		{x: 0, y: 100}
-		]
-	}, {
-		type: "line",
-		showInLegend: true,
-		legendText: "4 trains per day for 4 days",
-		dataPoints: [
-		{x: 0, y: 100}
-		]
-	}]
-    });
-	
-
-}
-
-
-
 function draw () {
 
 	
@@ -1795,7 +1744,7 @@ function draw () {
 		onComplete: nextAnimation
 	}));
 
-	/*
+	
 
 
 	
@@ -2787,7 +2736,7 @@ function draw () {
 		onComplete: clearGraph
 	}));
 
-*/
+
 
 
 
